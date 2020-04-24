@@ -19,7 +19,8 @@ public class TesteCampoTreinamento {
 	@Before
 	public void inicializa() {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/Bruno/Desktop/Projetos/Testes Funcionais com Selenium WebDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", 
+				"/Users/Bruno/Desktop/Projetos/Testes Funcionais com Selenium WebDriver/course-functional-tests-udemy/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		dsl = new DSL(driver);
@@ -28,7 +29,7 @@ public class TesteCampoTreinamento {
 	@After
 	public void finaliza() {
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
@@ -47,9 +48,9 @@ public class TesteCampoTreinamento {
 	@Test
 	public void testTextFieldDuplo(){
 		dsl.escrever("elementosForm:nome", "Bruno");
-		Assert.assertEquals("Wagner", dsl.obterValorCampo("elementosForm:nome"));
+		Assert.assertEquals("Bruno", dsl.obterValorCampo("elementosForm:nome"));
 		dsl.escrever("elementosForm:nome", "Sicchieri");
-		Assert.assertEquals("Aquino", dsl.obterValorCampo("elementosForm:nome"));
+		Assert.assertEquals("Sicchieri", dsl.obterValorCampo("elementosForm:nome"));
 	}
 	
 	@Test

@@ -13,7 +13,8 @@ public class TesteJanelaEWindowHandler {
 	@Before
 	public void inicializa() {
 		
-		System.setProperty("webdriver.chrome.driver", "/Users/Bruno/Desktop/Projetos/Testes Funcionais com Selenium WebDriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", 
+				"/Users/Bruno/Desktop/Projetos/Testes Funcionais com Selenium WebDriver/course-functional-tests-udemy/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("file:///" + System.getProperty("user.dir") + "/src/main/resources/componentes.html");
 		dsl = new DSL(driver);

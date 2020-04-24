@@ -55,10 +55,10 @@ public class TesteRegrasCadastro {
 		
 		return Arrays.asList(new Object[][] {
 			{"", "", "", Arrays.asList(), new String[]{}, "Nome eh obrigatorio"},
-			{"Wagner", "", "", Arrays.asList(), new String[]{}, "Sobrenome eh obrigatorio"},
-			{"Wagner", "Costa", "", Arrays.asList(), new String[]{}, "Sexo eh obrigatorio"},
-			{"Wagner", "Costa", "Masculino", Arrays.asList("Carne", "Vegetariano"), new String[]{}, "Tem certeza que voce eh vegetariano?"},
-			{"Wagner", "Costa", "Masculino", Arrays.asList("Carne"), new String[]{"Karate", "O que eh esporte?"}, "Voce faz esporte ou nao?"}
+			{"Bruno", "", "", Arrays.asList(), new String[]{}, "Sobrenome eh obrigatorio"},
+			{"Bruno", "Sicchieri", "", Arrays.asList(), new String[]{}, "Sexo eh obrigatorio"},
+			{"Bruno", "Sicchieri", "Masculino", Arrays.asList("Carne", "Vegetariano"), new String[]{}, "Tem certeza que voce eh vegetariano?"},
+			{"Bruno", "Sicchieri", "Masculino", Arrays.asList("Carne"), new String[]{"Karate", "O que eh esporte?"}, "Voce faz esporte ou nao?"}
 		});
 	}
 	
